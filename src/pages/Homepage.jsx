@@ -4,6 +4,8 @@ import CardGroup from '../components/CardGroup';
 
 import background_video from '../assets/background_video.mp4';
 
+import my_photo from '../assets/mi_foto.jpg';
+
 import github_logo from '../assets/github.png';
 import outlook_logo from '../assets/outlook.png';
 import whatsapp_logo from '../assets/whatsapp.png';
@@ -32,7 +34,7 @@ function Homepage() {
                 <div className='block lg:flex mx-auto bg-slate-800 bg-opacity-50 rounded-lg w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
                     { /* Picture */ }
                     <div className='flex items-center w-[65%] lg:w-2/5 mt-[8%] lg:mt-0 mx-auto'>
-                        <img src='src/assets/mi_foto.jpg' alt='My Photograph' className=' rounded-lg lg:rounded-l-lg lg:rounded-r-none'/>
+                        <img src={ my_photo } alt='My Photograph' className=' rounded-lg lg:rounded-l-lg lg:rounded-r-none'/>
                     </div>
 
                     { /* Introduction */ }
