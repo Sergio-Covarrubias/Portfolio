@@ -31,7 +31,7 @@ function Homepage() {
 
             { /* Profile */ }
             <div className='flex justify-center items-center min-h-screen p-16 animate-fade-down animate-once animate-duration-[2000ms] animate-ease-in-out'>
-                <div className='block lg:flex mx-auto bg-slate-800 bg-opacity-50 rounded-lg w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
+                <div className='block lg:flex mx-auto bg-slate-800 bg-opacity-50 rounded-lg w-full lg:w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
                     { /* Picture */ }
                     <div className='flex items-center w-[65%] lg:w-2/5 mt-[8%] lg:mt-0 mx-auto'>
                         <img src={ my_photo } alt='My Photograph' className=' rounded-lg lg:rounded-l-lg lg:rounded-r-none'/>
@@ -56,7 +56,7 @@ function Homepage() {
                             <div className='flex justify-center space-x-[10%] lg:space-x-12 mt-[8%]'>
                                 {
                                     contacts.map((contact, index) => (
-                                        <a key={ index } href={ contact.link } target='_blank'><img src={ contact.logo } alt={ contact.alt } className='transition duration-200 inline-block h-16 lg:h-12 xl:h-16 hover:scale-125' /></a>
+                                        <a key={ index } href={ contact.link } target='_blank'><img src={ contact.logo } alt={ contact.alt } className='transition duration-200 inline-block h-14 lg:h-12 xl:h-16 hover:scale-125' /></a>
                                     ))
                                 }
                             </div>
@@ -69,16 +69,16 @@ function Homepage() {
             <Title name='PROJECTS' />
             <CardGroup>
                 <ProjectCard title='AhorraPlus' dates={[ 'September 14th 2024', ]} image={ ahorraPlus } alt='AhorraPlus image' description={[
-                    'Created a personal finance management website for HackMTY hackathon event as an initiative for Capital One.',
-                    'React and Tailwind for the frontend.',
-                    'NodeJS for the backend.',
-                    'MongoDB for the database.',
+                    'Created a personal finance management website for HackMTY hackathon event as an initiative for Capital One',
+                    'React and Tailwind for the frontend',
+                    'Node.js for the backend',
+                    'MongoDB for the database',
                     ]} link='https://ahorraplus.onrender.com' 
                     className='animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out' />
                 <ProjectCard title='MyPyBlocks' dates={[ 'June 2024 - Ongoing', ]}  image={ myPyBlocks } alt='MyPyBlocks image' description={[
-                    'Creating a python block language app in Unity as a way of easing the initial process of learning the basics of programming.',
-                    'Converts from block language to a python script.',
-                    'Currently supports conditionals, loops, arrays, dictionaries and functions.',
+                    'Creating a python block language app in Unity as a way of easing the initial process of learning the basics of programming',
+                    'Converts from block language to a python script',
+                    'Currently supports conditionals, loops, arrays, dictionaries and functions',
                     ]} link='https://desisacc.itch.io/mypyblock'
                     className='animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out' />
             </CardGroup>
@@ -86,15 +86,15 @@ function Homepage() {
             <Title name='EXPERIENCES' />
             <CardGroup>
                 <ProjectCard title='Internship at GIDCOMP' dates={[ 'February 2024 - June 2024', ]} image={ gidcomp } alt='GIDCOMP image' description={[
-                    'Designed and created pages such as the home, conferences, profile and articles pages with the Elementor plugin.', 
-                    'Added a multilingual feature to the website.',
+                    'Designed and created pages such as the home, conferences, profile and articles pages with the Elementor plugin', 
+                    'Added a multilingual feature to the website',
                     'Worked on the newsletter by using Brevo\'s integrations with WordPress',
                     ]} link='https://guillermoarmenta.com' 
                     className='animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out' />
                 <ProjectCard title='RoboKids' dates={[ 'August 2023 - December 2023', 'June 10th 2024 - June 21st 2024', ]} image={ robokids } alt='RoboKids image' description={[
-                    'Teached in a robotics course for elementary-grade level kids.',
-                    'Taught them how to code in a block language to control the robots\' actions.',
-                    'The course used LEGO-like materials to build the robots.',
+                    'Teached in a robotics course for elementary-grade level kids',
+                    'Taught them how to code in a block language to control the robots\' actions',
+                    'The course used LEGO-like materials to build the robots',
                     ]} link='https://www.facebook.com/PROVAYOFICIAL/posts/pfbid0KEux9MPXpNVKwKU6DqfwkEGTYcerttQnqiDnp3eXTP5XP5eBwY8JthJTKEsWfWVHl'
                     className='animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out' />
             </CardGroup>
