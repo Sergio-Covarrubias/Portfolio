@@ -31,14 +31,14 @@ function Homepage() {
 
             { /* Profile */ }
             <div className='flex justify-center items-center min-h-screen py-16 animate-fade-down animate-once animate-duration-[2000ms] animate-ease-in-out'>
-                <div className='block lg:flex mx-[10%] py-[5%] bg-slate-800 bg-opacity-50 rounded-lg w-full lg:w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
+                <div className='block lg:flex mx-[10%] py-[5%] lg:py-[2%] bg-slate-800 bg-opacity-50 rounded-lg w-full lg:w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
                     { /* Picture */ }
-                    <div className='flex items-center w-[65%] lg:w-2/5 mt-[8%] lg:mt-0 mx-auto'>
-                        <img src={ my_photo } alt='My Photograph' className=' rounded-lg lg:rounded-l-lg lg:rounded-r-none'/>
+                    <div className='flex justify-center items-center w-[65%] lg:w-2/5 mt-[8%] lg:mt-0 mx-auto'>
+                        <img src={ my_photo } alt='My Photograph' className='w-full lg:w-[75%] rounded-lg'/>
                     </div>
 
                     { /* Introduction */ }
-                    <div className='w-full lg:w-3/5 px-[5%] lg:px-0 lg:mx-[5%] py-[6%] flex items-center'>
+                    <div className='w-full lg:w-3/5 px-[8%] lg:px-0 mx-0 lg:mr-[6%] py-[6%] flex items-center'>
                         <div>
                             <h1 className='font-bold text-2xl lg:text-xl xl:text-2xl text-center lg:text-left'>Sergio Alejandro Covarrubias Cázares</h1>
                             <h2 className='font-bold text-xl lg:text-base xl:text-xl text-center lg:text-left'>B.S. in Computer Science and Technology</h2>
