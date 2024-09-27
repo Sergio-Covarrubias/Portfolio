@@ -11,7 +11,7 @@ function ProjectCard({ title, dates, image, alt, description, link }) {
                     <h1 className='font-bold text-[190%] mb-[0%]'>{ title }</h1>
                     {
                         dates.map((date, index) => (
-                            <h2 key={ index } className='text-[110%] font-light'>{ date }</h2>
+                            <h2 key={ index } className='text-[95%] lg:text-[110%] font-light'>{ date }</h2>
                         ))
                     }
                     <hr className='inline-block my-[2%]' />
