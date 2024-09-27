@@ -1,6 +1,6 @@
 function ProjectCard({ title, dates, image, alt, description, link }) {
     return (
-            <div className='flex items-center justify-center bg-slate-800 bg-opacity-50 rounded-md p-[4%] lg:p-[5%] w-[90%] lg:w-[45%] mx-auto mb-12 shadow-gray-900 shadow-[4px_4px_0px_0px] animate-fade animate-once animate-duration-[2000ms] animate-ease-in-out'>
+            <div className='flex items-center justify-center bg-slate-800 bg-opacity-50 rounded-md px-[4%] py-[10%] lg:py-[5%] lg:w-[45%] mx-auto mb-12 shadow-gray-900 shadow-[4px_4px_0px_0px] animate-fade animate-once animate-duration-[2000ms] animate-ease-in-out'>
                 <div>
                 { /* Image */ }
                 <div className='flex justify-center'>

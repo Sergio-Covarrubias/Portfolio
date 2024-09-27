@@ -30,8 +30,8 @@ function Homepage() {
             </div>
 
             { /* Profile */ }
-            <div className='flex justify-center items-center min-h-screen p-16 animate-fade-down animate-once animate-duration-[2000ms] animate-ease-in-out'>
-                <div className='block lg:flex mx-auto bg-slate-800 bg-opacity-50 rounded-lg w-full lg:w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
+            <div className='flex justify-center items-center min-h-screen py-16 animate-fade-down animate-once animate-duration-[2000ms] animate-ease-in-out'>
+                <div className='block lg:flex mx-[10%] py-[5%] bg-slate-800 bg-opacity-50 rounded-lg w-full lg:w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
                     { /* Picture */ }
                     <div className='flex items-center w-[65%] lg:w-2/5 mt-[8%] lg:mt-0 mx-auto'>
                         <img src={ my_photo } alt='My Photograph' className=' rounded-lg lg:rounded-l-lg lg:rounded-r-none'/>
