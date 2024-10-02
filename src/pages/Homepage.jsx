@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import CardGroup from '../components/CardGroup';
 
 import background_video from '../assets/background_video.mp4';
+import background_img from '../assets/background.png';
 
 import my_photo from '../assets/mi_foto.jpg';
 
@@ -33,8 +34,10 @@ function Homepage() {
     return (
         <div className='bg-black bg-opacity-10'> 
 
-            <div className='absolute ml-[50%] flex items-center justify-center h-screen overflow-hidden'>
-                <video src={ background_video } autoPlay loop muted className='fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
+            {/* Background */}
+            <div className='flex absolute ml-[50%] items-center justify-center h-screen overflow-hidden'>
+                <video src={ background_video } autoPlay loop muted className='hidden lg:block fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
+                <img src={ background_img } className='block lg:hidden fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
             </div>
 
             { /* Profile */ }
