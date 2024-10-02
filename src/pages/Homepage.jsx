@@ -36,8 +36,8 @@ function Homepage() {
 
             {/* Background */}
             <div className='flex absolute ml-[50%] items-center justify-center h-screen overflow-hidden'>
-                <video src={ background_video } autoPlay loop muted className='hidden lg:block fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
-                <img src={ background_img } className='block lg:hidden fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
+                <video src={ background_video } autoPlay loop muted className='fixed -z-10 w-auto min-w-full min-h-full' />
+                {/* <img src={ background_img } className='block lg:hidden fixed -z-10 w-auto min-w-full min-h-full' /> */}
             </div>
 
             { /* Profile */ }
@@ -64,23 +64,17 @@ function Homepage() {
                                     ))
                                 }
                             </ul>
-                            
-                            {/* {<p className='text-sm lg:text-[70%] xl:text-sm text-center lg:text-left mt-[4%]'>
-                            Versatile programmer who is passionate about developing interactive educational software.
-                            Doesn't mind diving right into new tools or fields.
-                            Experience in Web Development with React and Node.js, WordPress and also in Game Development with the Unity 2D game engine.
-                            </p>} */}
 
                             { /* Media */ }
                             <div className='block text-center'>
                                 <div className='flex justify-center space-x-[8%] lg:space-x-12 mt-[8%]'>
                                     {
                                         contacts.map((contact, index) => (
-                                            <a key={ index } href={ contact.link } target='_blank'><img src={ contact.logo } alt={ contact.alt } className='transition duration-200 inline-block h-14 lg:h-12 xl:h-16 hover:scale-125' /></a>
+                                            <a key={ index } href={ contact.link } target='_blank'><img src={ contact.logo } alt={ contact.alt } className='transition duration-200 inline-block h-12 lg:h-12 xl:h-16 hover:scale-125' /></a>
                                         ))
                                     }
                                 </div>
-                                <h2 className='font-semibold text-[170%] lg:text-[140%] xl:text-[160%] mt-[4%] lg:mt-[3%]'>Contact Me!</h2>
+                                <h2 className='font-semibold text-[160%] lg:text-[140%] xl:text-[160%] mt-[4%] lg:mt-[3%]'>Contact Me!</h2>
                             </div>
                         </div> 
                     </div>
