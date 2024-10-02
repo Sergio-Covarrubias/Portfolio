@@ -6,6 +6,7 @@ import background_video from '../assets/background_video.mp4';
 
 import my_photo from '../assets/mi_foto.jpg';
 
+import linkedin_logo from '../assets/linkedin1.png';
 import github_logo from '../assets/github.png';
 import outlook_logo from '../assets/outlook.png';
 import whatsapp_logo from '../assets/whatsapp.png';
@@ -17,10 +18,17 @@ import myPyBlocks from '../assets/mypyblock.png';
 
 function Homepage() {
     const contacts = [
+        { logo: linkedin_logo, alt: 'Linkedin', link: 'https://www.linkedin.com/in/sergio-alejandro-covarrubias-c%C3%A1zares-34063632a/', },
         { logo: github_logo, alt: 'Github', link: 'https://github.com/Sergio-Covarrubias', },
         { logo: outlook_logo, alt: 'Outlook', link: 'mailto:sergio_cov@outlook.com', },
         { logo: whatsapp_logo, alt: 'WhatsApp - +52 6442284209', link: 'https://wa.link/3l8m84', },
     ];
+
+    const descriptions = [
+        'Versatile programmer who is passionate about developing interactive educational software.',
+        'Enjoys diving right into new tools or fields.',
+        'Experience in Web Development with React and Node.js, WordPress and also in Game Development with the Unity 2D game engine.',
+    ]
 
     return (
         <div className='bg-black bg-opacity-10'> 
@@ -40,25 +48,36 @@ function Homepage() {
                     { /* Introduction */ }
                     <div className='w-full lg:w-3/5 px-[8%] lg:px-0 mx-0 lg:mr-[6%] py-[6%] flex items-center'>
                         <div>
-                            <h1 className='font-bold text-2xl lg:text-xl xl:text-2xl text-center lg:text-left'>Sergio Alejandro Covarrubias Cázares</h1>
-                            <h2 className='font-bold text-xl lg:text-base xl:text-xl text-center lg:text-left'>B.S. in Computer Science and Technology</h2>
-                            <h2 className='font-bold text-lg lg:text-sm xl:text-lg text-center lg:text-left'>Sophomore Year</h2>
+                            <h1 className='font-bold text-[200%] lg:text-[180%] xl:text-[200%] text-center lg:text-left'>Sergio Alejandro Covarrubias Cázares</h1>
+                            <h2 className='font-semibold text-[140%] lg:text-[120%] xl:text-[140%] mt-[1%] -mb-[1%] text-center lg:text-left'>B.S. in Computer Science and Technology</h2>
+                            <h2 className='font-semibold text-[140%] lg:text-[120%] xl:text-[140%] text-center lg:text-left'>Sophomore Year</h2>
 
-                            <p className='text-sm lg:text-[70%] xl:text-sm text-center lg:text-left mt-[4%]'>
-                            I'm a versatile programmer who is passionate about developing software with educational and general utility
-                            purposes. I don't mind diving right into new tools or fields since widening my perspective is something I
-                            highly value as it allows me to learn how to develop other types of products that I could have never done
-                            before. So far I've had experience in Web Development with React and NodeJS and also with the WordPress 
-                            designer as well with Game Development with the Unity 2D game engine.
-                            </p>
-
-                            { /* Media */ }
-                            <div className='flex justify-center space-x-[10%] lg:space-x-12 mt-[8%]'>
+                            <ul className='mt-[2%] ml-[2%] list-none lg:list-disc'>
                                 {
-                                    contacts.map((contact, index) => (
-                                        <a key={ index } href={ contact.link } target='_blank'><img src={ contact.logo } alt={ contact.alt } className='transition duration-200 inline-block h-14 lg:h-12 xl:h-16 hover:scale-125' /></a>
+                                    descriptions.map((description, index) => (
+                                        <li key={index } className='text-sm lg:text-[80%] xl:text-sm my-[3%] lg:my-[1%] text-center lg:text-left '>
+                                            { description }
+                                        </li>
                                     ))
                                 }
+                            </ul>
+                            
+                            {/* {<p className='text-sm lg:text-[70%] xl:text-sm text-center lg:text-left mt-[4%]'>
+                            Versatile programmer who is passionate about developing interactive educational software.
+                            Doesn't mind diving right into new tools or fields.
+                            Experience in Web Development with React and Node.js, WordPress and also in Game Development with the Unity 2D game engine.
+                            </p>} */}
+
+                            { /* Media */ }
+                            <div className='block text-center'>
+                                <div className='flex justify-center space-x-[8%] lg:space-x-12 mt-[8%]'>
+                                    {
+                                        contacts.map((contact, index) => (
+                                            <a key={ index } href={ contact.link } target='_blank'><img src={ contact.logo } alt={ contact.alt } className='transition duration-200 inline-block h-14 lg:h-12 xl:h-16 hover:scale-125' /></a>
+                                        ))
+                                    }
+                                </div>
+                                <h2 className='font-semibold text-[170%] lg:text-[140%] xl:text-[160%] mt-[4%] lg:mt-[3%]'>Contact Me!</h2>
                             </div>
                         </div> 
                     </div>
