@@ -36,7 +36,7 @@ function Homepage() {
 
             {/* Background */}
             <div className='flex absolute ml-[50%] items-center justify-center h-screen overflow-hidden'>
-                <video src={ background_video } autoPlay loop muted className='fixed -z-10 w-auto min-w-full min-h-full' />
+                <video src={ background_video } autoPlay loop muted className='fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
                 {/* <img src={ background_img } className='block lg:hidden fixed -z-10 w-auto min-w-full min-h-full' /> */}
             </div>
 
