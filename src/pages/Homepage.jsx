@@ -35,19 +35,12 @@ function Homepage() {
         <div className='bg-black bg-opacity-10'> 
 
             {/* Background */}
-            <div className='hidden lg:block'>
-                <div className='absolute ml-[50%] flex items-center justify-center h-screen overflow-hidden'>
-                    <video src={ background_video } autoPlay loop muted className='fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
-                </div>
-            </div>
-            <div className='block lg:hidden'>
-                <div className='absolute ml-[50%] flex items-center justify-center h-screen overflow-hidden'>
-                    <img src={ background_img } className='fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
-                </div>
+            <div className='absolute ml-[50%] flex items-center justify-center h-screen overflow-hidden'>
+                <video src={ background_video } autoPlay loop muted className='fixed -z-10 w-auto min-w-full min-h-full max-w-none' />
             </div>
 
             { /* Profile */ }
-            <div className='flex justify-center items-center min-h-screen py-16 animate-fade-down animate-once animate-duration-[2000ms] animate-ease-in-out'>
+            <div className='flex justify-center items-center min-h-screen py-16 animate-fade-down animate-once animate-duration-[2000ms] animate-delay-300 animate-ease-in-out'>
                 <div className='block lg:flex mx-[10%] py-[5%] lg:py-[2%] bg-slate-800 bg-opacity-50 rounded-lg w-full lg:w-[83%] shadow-gray-900 shadow-[5px_5px_0px_0px]'>
                     { /* Picture */ }
                     <div className='flex justify-center items-center w-[65%] lg:w-2/5 mt-[8%] lg:mt-0 mx-auto'>
